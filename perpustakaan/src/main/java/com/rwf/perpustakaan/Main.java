@@ -12,8 +12,14 @@ package com.rwf.perpustakaan;
 public class Main {
     public static void main(String[] args) {
         Perpustakaan perpustakaan = new PerpustakaanUmum();
-        perpustakaan.pinjamBuku("Buku A");
-        perpustakaan.kembalikanBuku("Buku B");
+        perpustakaan.pinjamBuku("Petualangan Sirena");
+        perpustakaan.kembalikanBuku("Tenggelamnya Kapal Van Der Ser");
         perpustakaan.lihatDaftarBuku();
+        
+        
+        PerpustakaanDigital perpustakaanDigital = new PerpustakaanDigital();
+        perpustakaanDigital.pinjamBuku("Upin Dan Budi");
+        perpustakaanDigital.kembalikanBuku("Si Buta dari tadi");
+        perpustakaanDigital.lihatDaftarBuku();
     }
 }
